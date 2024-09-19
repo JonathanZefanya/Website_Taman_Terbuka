@@ -10,9 +10,14 @@ class AdminSeeder extends Seeder
     {
         $data = [
             [
-                'username' => 'adminUser',
-                'password' => password_hash('admin123_login', PASSWORD_BCRYPT),
-                'email'    => 'adminUser@example.com',
+                'username' => 'admin',
+                'password' => password_hash('admin', PASSWORD_BCRYPT),
+                'email'    => 'admin@example.com',
+            ],
+            [
+                'username' => 'JonathanZefanya',
+                'password' => password_hash('123', PASSWORD_BCRYPT),
+                'email'    => 'jonathan.zefanya16@gmail.com',
             ],
         ];
 

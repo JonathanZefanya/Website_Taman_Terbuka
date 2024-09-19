@@ -3,7 +3,7 @@
         <div class="container mx-auto px-4 flex items-center justify-between">
             <div class="logo-container flex items-center">
                 <img src="https://iti.ac.id/wp-content/uploads/2021/10/Logo-ITI-oke-1.png" alt="Logo-Jakarta" class="logo w-9">
-                <h1 class="ml-3 text-xl font-bold"><span>GIS</span> TAMAN<br />JAKARTA</h1>
+                <h1 class="ml-3 text-xl font-bold"><span>GIS</span> TAMAN<br />TERBUKA</h1>
             </div>
             
             <div class="md:hidden">
