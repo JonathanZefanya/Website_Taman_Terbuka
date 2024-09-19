@@ -25,7 +25,7 @@ env
 mv env .env
 ```
 
-buka mysql, lalu buat database baru dengan nama `ci4`
+buka mysql, lalu buat database baru dengan nama `taman_terbuka`
 <hr />
 
 lakukan migrate
