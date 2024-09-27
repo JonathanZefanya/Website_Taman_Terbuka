@@ -189,7 +189,7 @@
     <script src="<?= base_url('leaflet/leaflet.js') ?>"></script>
     <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
     <script>
-        var map = L.map('map').setView([-4.9180, 105.1997], 8); // zoom 8
+        var map = L.map('map').setView([-6.3440899, 106.6760713], 8); // zoom 8
 
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

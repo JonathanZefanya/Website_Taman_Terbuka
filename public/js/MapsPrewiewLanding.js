@@ -1,7 +1,7 @@
 var map = L.map('map', {
     dragging: false,
     tap: false
-}).setView([-4.9180, 105.1997], 7);
+}).setView([-6.3440899, 106.6760713], 7);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
