@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="<?= base_url('css/nav.css') ?>">
     <link rel="icon" type="image/png" href="<?= base_url('logo/favicon.png') ?>">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
-    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
-
     <style>
         body, html {
             margin: 0;
@@ -171,7 +168,7 @@
         <ul id="autocomplete-list" class="autocomplete-list"></ul>
     </div>
 
-    <div id="map" style="height: 665px;"></div>
+    <div id="map"></div>
 
     <div id="card-popup" class="card-popup">
         <div class="card-popup-close" onclick="closePopup()">✖</div>
@@ -184,10 +181,9 @@
         </div>
     </div>
 
-    <!-- <button onclick="window.location.href='<?= site_url('/'); ?>'" class="back-button">Back</button> -->
+    <button onclick="window.location.href='<?= site_url('/'); ?>'" class="back-button">Back</button>
 
     <script src="<?= base_url('leaflet/leaflet.js') ?>"></script>
-    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
     <script>
         var map = L.map('map').setView([-6.3440899, 106.6760713], 8); // zoom 8
 
@@ -197,7 +193,6 @@
 
         // Informasi marker
         var places = <?= json_encode($places) ?>;
-        var routingControl; // To store the routing control instance
 
         places.forEach(function(place) {
             var marker = L.marker([place.latitude, place.longitude]).addTo(map).bindPopup(`<b>${place.name}</b><hr/>${place.location}<br>${place.latitude}, ${place.longitude}`);
@@ -216,7 +211,7 @@
                 map.setView([foundPlace.latitude, foundPlace.longitude], 14);
                 openPopup(foundPlace);
             } else {
-                alert('Tempat Tidak Ditemukan!');
+                alert('Place not found!');
             }
         });
 
@@ -274,26 +269,12 @@
                 navigator.geolocation.getCurrentPosition(function(position) {
                     var userLat = position.coords.latitude;
                     var userLon = position.coords.longitude;
+                    var destinationLat = place.latitude;
+                    var destinationLon = place.longitude;
+                    
+                    var googleMapsLink = `https://www.google.com/maps/dir/?api=1&origin=${userLat},${userLon}&destination=${destinationLat},${destinationLon}&travelmode=driving`;
 
-                    // Remove any existing route
-                    if (routingControl) {
-                        map.removeControl(routingControl);
-                    }
-
-                    // Create a new routing control and add it to the map
-                    routingControl = L.Routing.control({
-                        waypoints: [
-                            L.latLng(userLat, userLon),
-                            L.latLng(place.latitude, place.longitude)
-                        ],
-                        routeWhileDragging: true
-                    }).addTo(map);
-
-                    // Zoom to fit the route
-                    map.fitBounds([
-                        [userLat, userLon],
-                        [place.latitude, place.longitude]
-                    ]);
+                    window.open(googleMapsLink, '_blank');
                 }, function() {
                     alert('Unable to retrieve your location.');
                 });

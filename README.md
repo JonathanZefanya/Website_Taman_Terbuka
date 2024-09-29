@@ -2,6 +2,11 @@
 
 website sistem informasi geografis Taman di provinsi JAKARTA
 
+## Page Admin
+```
+localhost:port/admin
+```
+
 ## Tutorial menjalankan proyek
 
 download composer kalo belum ada: 🔗https://getcomposer.org/download/ 
