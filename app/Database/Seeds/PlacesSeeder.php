@@ -26,8 +26,8 @@ class PlacesSeeder extends Seeder
                 'location' => 'Jl. Taman Suropati No. 5, Menteng, Kec. Menteng, Jakarta Pusat',
                 'description' => 'Taman Suropati adalah taman publik yang terletak di kawasan elit Menteng, Jakarta Pusat.',
                 'photo' => 'taman_suropati.jpg',
-                'latitude' => '-6.1999704',
-                'longitude' => '106.8298595',
+                'latitude' => '-6.1977592',
+                'longitude' => '106.8283848',
                 'link' => 'https://id.wikipedia.org/wiki/Taman_Suropati',
             ],
             [
@@ -35,8 +35,8 @@ class PlacesSeeder extends Seeder
                 'location' => 'Jl. HOS Cokroaminoto No. 1, Menteng, Kec. Menteng, Jakarta Pusat',
                 'description' => 'Taman modern yang dilengkapi dengan fasilitas olahraga, taman bermain, dan lapangan futsal.',
                 'photo' => 'taman_menteng.jpg',
-                'latitude' => '-6.1964034',
-                'longitude' => '106.8267357',
+                'latitude' => '-6.1964046',
+                'longitude' => '106.8273441',
                 'link' => 'https://jakartaparks.id/taman-menteng/',
             ],
             [
