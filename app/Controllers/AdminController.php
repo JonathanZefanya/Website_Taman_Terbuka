@@ -80,6 +80,7 @@ class AdminController extends BaseController
             'photo' => 'uploaded[photo]|is_image[photo]|mime_in[photo,image/jpg,image/jpeg,image/png]',
             'latitude' => 'required|decimal',
             'longitude' => 'required|decimal',
+            'link' => 'permit_empty|valid_url',
         ]);
 
         if (!$validation->withRequest($this->request)->run()) {
@@ -98,6 +99,7 @@ class AdminController extends BaseController
             'photo' => $photoName,
             'latitude' => $this->request->getPost('latitude'),
             'longitude' => $this->request->getPost('longitude'),
+            'link' => $this->request->getPost('link'),
         ];
         $model->insert($data);
         return redirect()->to('/admin/dashboard');
@@ -126,6 +128,7 @@ class AdminController extends BaseController
             'photo' => 'if_exist|is_image[photo]|mime_in[photo,image/jpg,image/jpeg,image/png]',
             'latitude' => 'required|decimal',
             'longitude' => 'required|decimal',
+            'link' => 'permit_empty|valid_url',
         ]);
 
         if (!$validation->withRequest($this->request)->run()) {
@@ -154,6 +157,7 @@ class AdminController extends BaseController
             'photo' => $photoName,
             'latitude' => $this->request->getPost('latitude'),
             'longitude' => $this->request->getPost('longitude'),
+            'link' => $this->request->getPost('link'),
         ];
         $model->update($id, $data);
         return redirect()->to('/admin/dashboard');

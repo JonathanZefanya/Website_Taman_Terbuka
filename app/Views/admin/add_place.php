@@ -43,6 +43,10 @@
                 <label for="longitude" class="block text-gray-700 mb-2">Longitude:</label>
                 <input type="text" name="longitude" id="longitude" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500" required>
             </div>
+            <div class="mb-4">
+                <label for="link" class="block text-gray-700 mb-2">Link:</label>
+                <input type="text" name="link" id="link" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-blue-500">
+            </div>
             <button type="submit" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 w-full">Simpan</button>
         </form>
     </div>
@@ -69,7 +73,7 @@
 
         document.getElementById('placeForm').addEventListener('submit', function(event) {
             let valid = true;
-            const requiredFields = ['name', 'location', 'description', 'latitude', 'longitude'];
+            const requiredFields = ['name', 'location', 'description', 'latitude', 'longitude', 'link'];
             requiredFields.forEach(function(field) {
                 const input = document.getElementById(field);
                 if (!input.value.trim()) {

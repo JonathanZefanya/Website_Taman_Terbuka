@@ -28,6 +28,7 @@
                                 <th class="py-2 px-4">Deskripsi</th>
                                 <th class="py-2 px-4">Foto</th>
                                 <th class="py-2 px-4">Koordinat</th>
+                                <th class="py-2 px-4">Link</th>
                                 <th class="py-2 px-4">Aksi</th>
                             </tr>
                         </thead>
@@ -39,6 +40,7 @@
                                     <td class="py-2 px-4"><?= $place['description'] ?></td>
                                     <td class="py-2 px-4"><img src="<?= base_url('uploads/' . $place['photo']) ?>" alt="<?= $place['name'] ?>" width="100"></td>
                                     <td class="py-2 px-4"><?= $place['latitude'] ?>, <?= $place['longitude'] ?></td>
+                                    <td class="py-2 px-4"><?= $place['link'] ?></td>
                                     <td class="py-2 flex flex-col border-none">
                                         <a href="<?= site_url('admin/editPlace/' . $place['id']) ?>" class="text-white text-center bg-blue-500 hover:bg-blue-600 p-3 rounded-full m-2 hover:underline">Edit</a>
                                         <a href="<?= site_url('admin/deletePlace/' . $place['id']) ?>" class="text-white text-center bg-red-500 hover:bg-red-600 p-3 rounded-full m-2 hover:underline">Delete</a>

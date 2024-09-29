@@ -32,6 +32,7 @@
                         <p class="mb-2 text-lg"><strong class="font-semibold">Koordinat:</strong> <?= $place['latitude'] ?>, <?= $place['longitude'] ?></p>
                         <p class="mb-4 text-lg"><strong class="font-semibold">Deskripsi:</strong></p>
                         <p class="text-gray-700 mb-4"><?= $place['description'] ?></p>
+                        <a href="<?= $place['link'] ?>" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block">Kunjungi Website</a>
                         <div id="map" class="w-full h-64 rounded-lg shadow-md"></div>
                     </div>
                 </div>

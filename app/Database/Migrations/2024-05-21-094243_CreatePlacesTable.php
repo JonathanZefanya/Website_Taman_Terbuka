@@ -38,6 +38,10 @@ class CreatePlacesTable extends Migration
                 'type'       => 'DECIMAL',
                 'constraint' => '11,8',
             ],
+            'link' => [
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ],
             'created_at' => [
                 'type' => 'TIMESTAMP',
                 'null' => true,

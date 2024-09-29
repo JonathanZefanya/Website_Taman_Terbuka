@@ -181,6 +181,7 @@
                                                     <th>Koordinat Lokasi</th>
                                                     <th>Alamat Lengkap</th>
                                                     <th>Deskripsi</th>
+                                                    <th>Link</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -205,7 +206,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; Your Website 2024</span>
                     </div>
                 </div>
             </footer>

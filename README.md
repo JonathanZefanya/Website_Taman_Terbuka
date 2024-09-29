@@ -4,7 +4,7 @@ website sistem informasi geografis Taman di provinsi JAKARTA
 
 ## Page Admin
 ```
-localhost:port/admin
+localhost:port/index.php/admin
 ```
 
 ## Tutorial menjalankan proyek
