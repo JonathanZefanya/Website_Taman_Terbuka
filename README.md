@@ -7,6 +7,11 @@ website sistem informasi geografis Taman di provinsi Jakarta
 localhost:port/index.php/admin
 ```
 
+```
+Email: admin@example.com <br>
+Password: admin
+```
+
 ## Tutorial menjalankan proyek
 
 download composer kalo belum ada: 🔗https://getcomposer.org/download/ 
