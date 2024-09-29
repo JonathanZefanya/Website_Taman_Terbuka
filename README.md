@@ -1,6 +1,6 @@
 # GIS-TAMAN-JAKARTA
 
-website sistem informasi geografis Taman di provinsi JAKARTA
+website sistem informasi geografis Taman di provinsi Jakarta
 
 ## Page Admin
 ```
@@ -33,7 +33,7 @@ mv env .env
 buka mysql, lalu buat database baru dengan nama `taman_terbuka`
 <hr />
 
-lakukan migrate
+lakukan migrate database
 
 ```
 php spark migrate
@@ -41,6 +41,10 @@ php spark migrate
 
 ```
 php spark db:seed AdminSeeder
+```
+
+```
+php spark db:seed PlacesSeeder
 ```
 
 jalankan localhost webnya
