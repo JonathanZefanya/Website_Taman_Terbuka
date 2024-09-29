@@ -8,7 +8,7 @@ localhost:port/index.php/admin
 ```
 
 ```
-Email: admin@example.com <br>
+Email: admin@example.com
 Password: admin
 ```
 
