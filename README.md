@@ -2,15 +2,6 @@
 
 website sistem informasi geografis Taman di provinsi Jakarta
 
-## Page Admin
-```
-localhost:port/index.php/admin
-```
-
-```
-Email: admin@example.com
-Password: admin
-```
 
 ## Tutorial menjalankan proyek
 

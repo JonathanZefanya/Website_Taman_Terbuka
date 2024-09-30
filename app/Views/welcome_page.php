@@ -17,7 +17,7 @@
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
         <div class="explore-content top-20 relative z-10 flex flex-col items-center justify-center h-full text-white">
             <h1 class="text-4xl md:text-7xl font-black tracking-tight leading-tight mb-4">WELCOME TO GIS <br>TAMAN TERBUKA</h1>
-            <p class="text-lg mb-8">Discover the beauty of Jakarta's Place's tourist wonders</p>
+            <p class="text-lg mb-8">Website Khusus Kalian Yang Suka Dengan Eksplorasi Taman Di Provinsi Jakarta</p>
             <a href="<?= site_url('explore_place'); ?>" class="btn bg-yellow-500 text-white py-3 px-6 text-xl rounded-full hover:bg-yellow-600 transition duration-300 ease-in-out">Explore Now</a>
         </div>
     </section>
