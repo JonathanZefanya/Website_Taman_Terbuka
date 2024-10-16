@@ -7,7 +7,7 @@
     <hr />
     <a class="icons flex items-center mb-4 text-white hover:text-yellow-500" href="<?= site_url('mastering/addPlace') ?>">
         <i data-feather="plus-circle" class="mr-2"></i>
-        <span>Tempat TAMAN</span>
+        <span>Tempat Taman</span>
     </a>
     <div class="logout-link icons flex items-center mt-auto text-white hover:text-yellow-500">
         <a class="flex items-center w-full justify-center" href="<?= site_url('mastering/logout') ?>">
