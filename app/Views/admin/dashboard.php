@@ -42,8 +42,8 @@
                                     <td class="py-2 px-4"><?= $place['latitude'] ?>, <?= $place['longitude'] ?></td>
                                     <td class="py-2 px-4"><?= $place['link'] ?></td>
                                     <td class="py-2 flex flex-col border-none">
-                                        <a href="<?= site_url('admin/editPlace/' . $place['id']) ?>" class="text-white text-center bg-blue-500 hover:bg-blue-600 p-3 rounded-full m-2 hover:underline">Edit</a>
-                                        <a href="<?= site_url('admin/deletePlace/' . $place['id']) ?>" onclick="return confirm('Anda yakin ingin menghapus?')" class="text-white text-center bg-red-500 hover:bg-red-600 p-3 rounded-full m-2 hover:underline">Delete</a>
+                                        <a href="<?= site_url('mastering/editPlace/' . $place['id']) ?>" class="text-white text-center bg-blue-500 hover:bg-blue-600 p-3 rounded-full m-2 hover:underline">Edit</a>
+                                        <a href="<?= site_url('mastering/deletePlace/' . $place['id']) ?>" onclick="return confirm('Anda yakin ingin menghapus?')" class="text-white text-center bg-red-500 hover:bg-red-600 p-3 rounded-full m-2 hover:underline">Delete</a>
                                     </td>
                                 </tr>
                             <?php endforeach; ?>

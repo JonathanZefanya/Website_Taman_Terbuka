@@ -27,7 +27,7 @@ class AuthFilter implements FilterInterface
     {
         // Memeriksa apakah pengguna sudah login
         if (!session()->get('logged_in')) {
-            return redirect()->to('/admin')->with('msg', 'You must be logged in to access this page.');
+            return redirect()->to('/mastering')->with('msg', 'You must be logged in to access this page.');
         }
     }
 

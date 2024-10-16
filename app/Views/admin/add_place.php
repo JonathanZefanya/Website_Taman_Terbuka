@@ -16,7 +16,7 @@
         <?php if (isset($validation)): ?>
             <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4"><?= $validation->listErrors() ?></div>
         <?php endif; ?>
-        <form id="placeForm" action="<?= site_url('admin/savePlace') ?>" method="post" enctype="multipart/form-data" class="bg-white p-8 rounded-lg shadow-md max-w-xl mx-auto">
+        <form id="placeForm" action="<?= site_url('mastering/savePlace') ?>" method="post" enctype="multipart/form-data" class="bg-white p-8 rounded-lg shadow-md max-w-xl mx-auto">
             <?= csrf_field() ?>
             <div class="mb-4">
                 <label for="name" class="block text-gray-700 mb-2">Nama Taman:</label>

@@ -33,14 +33,14 @@ class AdminController extends BaseController
                     'logged_in' => TRUE
                 ];
                 $session->set($ses_data);
-                return redirect()->to('/admin/dashboard');
+                return redirect()->to('/mastering/dashboard');
             } else {
                 $session->setFlashdata('msg', 'Password salah');
-                return redirect()->to('/admin');
+                return redirect()->to('/mastering');
             }
         } else {
             $session->setFlashdata('msg', 'Email tidak ditemukan');
-            return redirect()->to('/admin');
+            return redirect()->to('/mastering');
         }
     }
 
@@ -48,7 +48,7 @@ class AdminController extends BaseController
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/admin');
+        return redirect()->to('/mastering');
     }
 
     public function dashboard()
@@ -68,7 +68,7 @@ class AdminController extends BaseController
     {
         $session = session();
         if (!$session->get('logged_in')) {
-            return redirect()->to('/admin');
+            return redirect()->to('/mastering');
         }
 
         $validation = \Config\Services::validation();
@@ -102,7 +102,7 @@ class AdminController extends BaseController
             'link' => $this->request->getPost('link'),
         ];
         $model->insert($data);
-        return redirect()->to('/admin/dashboard');
+        return redirect()->to('/mastering/dashboard');
     }
 
     public function editPlace($id)
@@ -116,7 +116,7 @@ class AdminController extends BaseController
     {
         $session = session();
         if (!$session->get('logged_in')) {
-            return redirect()->to('/admin');
+            return redirect()->to('/mastering');
         }
 
         $validation = \Config\Services::validation();
@@ -160,14 +160,14 @@ class AdminController extends BaseController
             'link' => $this->request->getPost('link'),
         ];
         $model->update($id, $data);
-        return redirect()->to('/admin/dashboard');
+        return redirect()->to('/mastering/dashboard');
     }
 
     public function deletePlace($id)
     {
         $session = session();
         if (!$session->get('logged_in')) {
-            return redirect()->to('/admin');
+            return redirect()->to('/mastering');
         }
 
         $model = new PlaceModel();
@@ -181,6 +181,6 @@ class AdminController extends BaseController
             $model->delete($id);
         }
 
-        return redirect()->to('/admin/dashboard');
+        return redirect()->to('/mastering/dashboard');
     }
 }

@@ -19,7 +19,7 @@
                 <li class="p-1 rounded-full"><a href="<?= base_url('#about-JAKARTA') ?>" class="text-white hover:text-yellow-400 ">Jakarta</a></li>
                 <li class="p-1 rounded-full"><a href="<?= base_url('#tourist-places') ?>" class="text-white hover:text-yellow-400 ">Places</a></li>
                 <li class="p-1 rounded-full"><a href="<?= site_url('explore_place'); ?>" class="text-white hover:text-yellow-400 ">Maps</a></li>
-                <!-- <li class="hover:bg-yellow-400 p-1 rounded-full"><a href="<?= base_url('admin') ?>" class="hover:text-black">Admin Login</a></li> -->
+                <!-- <li class="hover:bg-yellow-400 p-1 rounded-full"><a href="<?= base_url('mastering') ?>" class="hover:text-black">Admin Login</a></li> -->
             </ul>
         </div>
         
@@ -28,7 +28,7 @@
             <a href="<?= base_url('#about-JAKARTA') ?>" class="block py-2 px-4 w-full text-center hover:bg-gray-700 rounded">Jakarta</a>
             <a href="<?= base_url('#tourist-places') ?>" class="block py-2 px-4 w-full text-center hover:bg-gray-700 rounded">Places</a>
             <a href="<?= site_url('explore_place'); ?>" class="block py-2 px-4 w-full text-center hover:bg-gray-700 rounded">Maps</a>
-            <!-- <a href="<?= base_url('admin') ?>" class="block py-2 px-4 w-full text-center hover:bg-gray-700 rounded">Admin Login</a> -->
+            <!-- <a href="<?= base_url('mastering') ?>" class="block py-2 px-4 w-full text-center hover:bg-gray-700 rounded">Admin Login</a> -->
         </div>
     </nav>
 </header>

@@ -18,7 +18,7 @@
         <?php if (session()->getFlashdata('msg')) : ?>
             <div class="alert alert-danger text-red-500 mb-4"><?= session()->getFlashdata('msg') ?></div>
         <?php endif; ?>
-        <form action="<?= site_url('admin/loginAuth') ?>" method="post">
+        <form action="<?= site_url('mastering/loginAuth') ?>" method="post">
             <?= csrf_field() ?>
             <div class="form-group mb-4">
                 <label for="email" class="block text-gray-700 mb-2">Email:</label>

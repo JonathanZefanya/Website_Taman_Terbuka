@@ -74,7 +74,7 @@
 
             <!-- Nav Item - Logout -->
             <li class="nav-item">
-                <a class="nav-link" href="<?= route_to('admin.logout') ?>">
+                <a class="nav-link" href="<?= route_to('mastering.logout') ?>">
                     <i class="fas fa-fw fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>
@@ -126,7 +126,7 @@
                             <!-- Menu Dropdown - Logout -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="<?= route_to('admin.logout') ?>">
+                                <a class="dropdown-item" href="<?= route_to('mastering.logout') ?>">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
