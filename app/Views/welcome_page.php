@@ -22,8 +22,8 @@
         </div>
     </section>
 
-    <section id="about-JAKARTA" class="about-JAKARTA py-40 bg-gray-100">
-        <div class="about-JAKARTA-content max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about-jakarta" class="about-jakarta py-40 bg-gray-100">
+        <div class="about-jakarta-content max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Tentang JAKARTA</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="description">
@@ -41,8 +41,8 @@
         </div>
     </section>
 
-    <section id="tourist-places" class="tourist-places py-40 bg-gray-200">
-        <div class="tourist-places-cards max-w-6xl mx-auto text-center sm:px-6 lg:px-8 py-100 rounded-lg">
+    <section id="taman-places" class="taman-places py-40 bg-gray-200">
+        <div class="taman-places-cards max-w-6xl mx-auto text-center sm:px-6 lg:px-8 py-100 rounded-lg">
             <h2 class="text-3xl md:text-4xl font-bold mb-12 text-black">OBJEK TAMAN</h2>
             <?php if (empty($places)): ?>
                 <div class="no-places">
@@ -103,7 +103,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
         // ScrollReveal
-        ScrollReveal().reveal('.explore-content, .about-JAKARTA-content, .tourist-places-cards, .map, .sdgs-cards', {
+        ScrollReveal().reveal('.explore-content, .about-jakarta-content, .taman-places-cards, .map, .sdgs-cards', {
             duration: 1000,
             origin: 'bottom',
             distance: '50px',
