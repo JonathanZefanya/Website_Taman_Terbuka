@@ -119,7 +119,7 @@
         .card-popup {
             position: absolute;
             top: 20%;
-            left: 20px;
+            right: 20px; /* Card Taman ke kanan */
             width: 300px;
             background: white;
             border-radius: 10px;

@@ -13,7 +13,7 @@
 <body class="bg-white font-sans">
     <?php include(APPPATH . 'Views/templates/navbar.php'); ?>
 
-    <section id="explore" class="explore py-40 relative h-screen bg-cover bg-center text-center" style="background-image: url('https://images.unsplash.com/photo-1716668595976-604426108db1?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <section id="explore" class="explore py-40 relative h-screen bg-cover bg-center text-center" style="background-image: url('https://p4.wallpaperbetter.com/wallpaper/894/963/687/garden-4k-wonderful-desktop-wallpaper-preview.jpg');">
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
         <div class="explore-content top-20 relative z-10 flex flex-col items-center justify-center h-full text-white">
             <h1 class="text-4xl md:text-7xl font-black tracking-tight leading-tight mb-4">WELCOME TO GIS <br>TAMAN TERBUKA</h1>
